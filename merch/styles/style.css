@@ -1,0 +1,151 @@
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo{
+    width: 50px;
+    background-color: #af1e2d;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.header{
+    background-color: #af1e2d;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.navigation .nav-item a{
+    color: white;
+    text-decoration: none;
+}
+
+.navigation .list{
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.btn-search{
+    all:unset;
+    color: white;
+    padding: 4px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.navigation{
+    margin-left: auto;
+    display: block;
+}
+.navigation ul li{
+    position: relative;
+}
+
+.navigation ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+.navigation ul li:hover::after{
+    width: 100%;
+}
+/* MAIN */
+
+.content{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("../../Photos/background.jpg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    /* align-content: center; */
+    background-position-y: 70%;
+    max-height: 700px;
+    height: 700px;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.content a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.merch-category{
+    display: block;
+    max-width: 300px;
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+    margin: 20px;
+}
+
+.merch-img-container{
+    width: 250px;
+    height: 250px;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.merch-category img{
+    width: 250px;
+    height: 250px;
+    max-width: 250px;
+    max-height: 250px;
+    padding: 4px;
+    border-radius: 18px ;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+
+
+/* FOOTER */
+
+footer{
+    padding: 30px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo{
+    max-width: 80px;
+    margin-right: 500px;
+}
+.helpful-links ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.helpful-links ul li {
+    margin-right: 50px;
+}
+
+.helpful-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.helpful-links ul{
+    list-style-type: none;
+}
